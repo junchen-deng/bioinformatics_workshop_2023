@@ -1,4 +1,4 @@
-# Bioinformatics workshop: information and materials
+# Bioinformatics workshop_2023: information and materials
 This repository will contain the approximate schedule and the list of notes and materials for the informal bioinformatics workshop taught by Piotr Łukasik at the Institute of Environmental Sciences. This is very much work in progress --- but hopefully, will help you stay on top of things!  
 &nbsp;  
   
