@@ -1,14 +1,16 @@
-# Workshop 1. (2nd March 2021). Introduction to computational biology, command line, Linux.
+# Workshop 1. (Self-study at around 10th November 2023). Introduction to computational biology, command line, Linux.
+&nbsp; 
+
+This first workshop largely covers the basics of how to work in the Unix environment that most of you should have learnt during the Amplicon Sequencing workshop. Also, the planned start date of the course, where we wanted to cover this, is actually a day off ... Hence, we will NOT systematically cover this portion during an organized session, but may recap the main points on 17th November.
+&nbsp;
 
 ### 1.1. The workshop
-   * Piotr - background, interests, and bioinformatics experience
-   * Workshop participants - background, interests, experience, expectations
-   * What the workshop is about
+   * What the workshop is about:
        - Unofficial, informal - but a bit of a pilot for a future more systematic Comp Biol training at INoŚ
-       - Goal: teach you something useful. I assume you want to learn.
-       - Contents and pace flexible, I'll adjust to your needs and interests. 
+       - Goal: teach you something useful. We assume you want to learn.
+       - Contents and pace flexible, We'll adjust to your needs and interests. 
        - You don't need to attend individual classes. Drop any time. No grades or evaluations.
-       - When teaching new stuff I assume you are comfortable with the previously taught stuff. Make sure you are!
+       - When teaching new stuff, we assume you are comfortable with the previously taught stuff. Make sure you are. There is no point in attending if you don't follow. 
  &nbsp;  
    
  ### 1.2. Bioinformatics and command line
@@ -105,8 +107,9 @@
 &nbsp;  
   
 ### 1.4. The HOMEWORK :)
-   * Read Chapter 1 and Chapter 4 in the book - recap what we have covered today!
+   * Read Chapter 1 and Chapter 4 in the "Practical Computing for Biologists" book - recap in a more systematic manner the points that we have covered here!
+   * Ensure that you have access to Linux - through one of several means that depend on your computer, as recommended in the book.
+   * If you haven't, you may want to set up an account on one of the INoŚ clusters - *bug* or *azor*
    * Practice! Follow the exercises in the book, make sure you are comfortable with all material covered.
-   * Make sure that you have accounts on one of the INoŚ clusters! I recommend *azor*.
-   * Send me a brief summary/example of the type of computational biology tasks that would be useful to you!
+   * Send us a brief summary/example of the type of computational biology tasks that would be useful to you!
    * Read Chapter 5 in the book. During the next session, we will mostly be covering its contents.
