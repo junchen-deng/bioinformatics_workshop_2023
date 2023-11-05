@@ -2,7 +2,7 @@
 This repository will contain the approximate schedule and the list of notes and materials for the informal bioinformatics workshop taught by Junchen Deng and Piotr Łukasik at the Institute of Environmental Sciences, during the winter term of 2023/24 academic year. This is very much work in progress --- but hopefully, will help you stay on top of things!
 &nbsp;  
 
-We will be meeting on Fridays at 13:00 at room 1.0.4 at the Institute of Environmental Sciences. There will be an option of on-line participation via Microsoft Teams, and we will make recordings. With this, all participants should have access to the Ms Teams group "SYMBIO bioinformatics workshop". If you don't, contact Junchen or Piotr. Also, we will be often referring to the book "Practical Computing for Biologists"; we have some hard copies floating around, and a digital copy is available among the "Files" of the Ms Teams channel.
+We will be meeting on Fridays at 13:00 at room 1.0.4 at the Institute of Environmental Sciences. There will be an option of on-line participation via Microsoft Teams, and we will make recordings. With this, all participants should have access to the Ms Teams group "SYMBIO bioinformatics workshop". If you don't, contact Junchen or Piotr. Also, we will be frequently referring to the excellent book ["Practical Computing for Biologists"](https://practicalcomputing.org/); you may want to get your own copy, we have some hard copies floating around, and a digital copy is available among the "Files" of the Ms Teams channel.
 &nbsp;  
 
 
