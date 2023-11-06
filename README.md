@@ -73,5 +73,24 @@ We will be meeting on Fridays at 13:00 at room 1.0.4 at the Institute of Environ
    * Input and Output files
    * Editing sequence files - how to organize the workflow?
   
+&nbsp; 
+  
+### [Workshop P3 (date TBD). Python - working with files!](WorkshopP3.md)
+   * Reviewing homework. How to make your scripts more efficient?
+   * Methods to be applied on variables
+   * Input and Output files
+   * Editing sequence files - how to organize the workflow?
+  
+&nbsp;  
+  
+### Workshop P4++ (dates TBD). Python - getting from building blocks to bioinformatic tools!
+   * Planning and working together on some larger scripts relevant to your data.
+   * Planning your big programming project!
+  
+&nbsp;  
+  
+### Workshops - data visualization using Processing (dates TBD).
+   * Using Python-like syntax to visualize your data exactly the way you want using Processing!
+  
 &nbsp;  
     
