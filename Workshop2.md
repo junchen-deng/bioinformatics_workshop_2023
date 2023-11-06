@@ -1,11 +1,11 @@
-# Workshop 2. (11th March 2021). Working with text files in the Linux environment
+# Workshop 2. (17th November 2023). Working with text files in the Linux environment
 &nbsp;  
   
 ### 2.1. Working on the cluster: logging in, accessing & moving files. Etiquette. htop.
 
 Tools for logging in, copying files, etc. are platform-specific. Hopefully, everybody has managed to get them to work :)  
   
-Cluster etiquette... if you are planning any substantial jobs, requiring many cores or lots of memory, make sure to book your slot! Piotr Zieliński (piotr.zielinski@uj.edu.pl) manages the *molecol_cluster* Google group that provides access to the calendar. If you're planning to work there, make sure you get added!   
+Cluster etiquette... if you are planning any substantial jobs, requiring many cores or lots of memory, make sure to book your slot! Piotr is among the managers of the *molecol_cluster* Google group that provides access to the calendar. If you're planning to work there, make sure you get added!   
 &nbsp;  
   
 Before working on the cluster, you want to check what is going on. *htop* is the tool that allows you to do that.  
