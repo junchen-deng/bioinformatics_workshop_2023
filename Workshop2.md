@@ -16,10 +16,10 @@ Before working on the cluster, you want to check what is going on. *htop* is the
   
 OK, so here are some jobs for you!  
 * In your home directory on the cluster, make directory "workshops".
-* In this directory, make directory "workshop_20210311"
+* In this directory, make directory "workshop_20231117"
 * In this directory, make directory "files"
-* In /mnt/matrix/symbio/workshops/workshop_20210311/, there are some files. What are they? How big they are? In megabases?
-* Copy the files to your own "workshop_20210311" directory.
+* In /mnt/matrix/symbio/workshops/workshop_20231117/, there are some files. What are they? How big they are? In megabases?
+* Copy the files to your own "workshop_20231117" directory.
 * Sorry, I meant to "files". Now move them to "files"!
 * Sorry, the extension of one of the files is wrong. Change the extension of "Army_ant_COI_seqs.txt" to "fasta"!
 * Ooops, files with the name starting with "SPH0121" shouldn't have been there at all. Remove them! 
