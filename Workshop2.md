@@ -19,7 +19,7 @@ OK, so here are some jobs for you!
 * In this directory, make directory "workshop_20231117"
 * In this directory, make directory "files"
 * In **/mnt/qnap/users/symbio/workshops/workshop_20231117**, there are some files. &nbsp;
-  In case you cannot access the server, they are also in a "workshop_20231117" directory on our Teams. &nbsp;
+  In case you cannot access the server, they are also in a **"workshop_20231117"** directory on our Teams. &nbsp;
   What are the files? How big they are? In megabases?
 * Copy the files to your own "workshop_20231117" directory.
 * Sorry, I meant to "files". Now move them to "files"!
