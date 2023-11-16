@@ -18,7 +18,9 @@ OK, so here are some jobs for you!
 * In your home directory on the cluster, make directory "workshops".
 * In this directory, make directory "workshop_20231117"
 * In this directory, make directory "files"
-* In **/mnt/qnap/users/symbio/workshops/workshop_20231117**, there are some files. What are they? How big they are? In megabases?
+* In **/mnt/qnap/users/symbio/workshops/workshop_20231117**, there are some files. 
+  In case you cannot access the server, they are also in a "workshop_20231117" directory on our Teams. 
+  What are the files? How big they are? In megabases?
 * Copy the files to your own "workshop_20231117" directory.
 * Sorry, I meant to "files". Now move them to "files"!
 * Sorry, the extension of one of the files is wrong. Change the extension of "Army_ant_COI_seqs.txt" to "fasta"!
