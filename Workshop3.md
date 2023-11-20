@@ -1,4 +1,4 @@
-# Workshop 3 (18th March 2021). The Unix environment - advanced topics
+# Workshop 3 (24th November 2023). The Unix environment - advanced topics
 &nbsp;  
   
 ### 3.1. Working on the cluster: logging in, accessing & moving files.
