@@ -120,7 +120,7 @@ Alternatively, in some cases, you may want to use ">>", or "append" instead, whi
    - Note that **grep** might output results with the double-dash separator **'--'**, like what you got from **grep -A 1** and **grep -B 2**. You can add the argument **--no-group-separator** to prevent the separator.
    ```
    grep -A 1 --no-group-separator "Eciton" Army_ant_COI_seqs.fasta    # lists N lines after each identified text string and remove the separator '--'!  
-
+   ```
 &nbsp;   
 But what makes it all really useful is the ability to "pipe" commands, directing output of one as input for another. Use the "|" character to separate commands
    ```
