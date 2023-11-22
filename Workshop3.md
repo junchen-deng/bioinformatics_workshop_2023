@@ -60,7 +60,12 @@ head OTU_table.txt | cut -f 1-3 # let's extract only the first three columns
 head OTU_table.txt | cut -f 1-3,5,8-10 # ... or to a more complicated selection!
 ```  
   
-You can specify your delimiter (-d), or display only characters with specific numbers (-c)
+By default, **cut** work with tab-delimited file. You can specify your delimiter (-d), or display only characters in a certain range or position (-c)
+```
+head OTU_table.csv.bak | cut -d, -f 1-3    # OTU_table.csv.bak is coma-delimited
+head OTU_table.csv.bak | cut -c 1-2    # display the column of the first and second character
+```
+
 Another command, **sort**, sorts lines
 ```  
 head OTU_table.txt
