@@ -74,7 +74,8 @@ history > current_history.txt
 ```  
 Now, have a look at the output!  
   
-Note that ">" creates a file and may **overwrite** file with the same name that was there before!  
+Note that ">" creates a file and may **overwrite** file with the same name that was there before! To avoid this issue, you can run the command **'set -o noclobber'** in the terminal. It will forbid the user from rewriting a file with the same name next time when the user uses '>'. 
+
 Alternatively, in some cases, you may want to use ">>", or "append" instead, which appends contents to the end of the file if one exists.  
 &nbsp;  
   
