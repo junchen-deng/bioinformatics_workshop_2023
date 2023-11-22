@@ -35,7 +35,7 @@ Basic syntax:
 ```
 sed 's/old/new/g' input_file > output_file
 ```
-Here, the **'s'** placed at the beginning indicates 'substitute', and the **'g'** at the end indicates 'global placement'. **Without 'g', the sed will only replace the first occurrence in a line!**  
+Here, the **'s'** at the beginning indicates 'substitute', and the **'g'** at the end indicates 'global placement'. **Without 'g', the sed will only replace the first occurrence in a line!**  
   
 Applications:
 ```
