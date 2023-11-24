@@ -9,9 +9,10 @@ Tools for logging in, copying files, etc. are platform-specific. Hopefully, they
 ### 3.2. Reviewing homework :)
 
 How did you do? What are your solutions?
-   * File "OTU_table.txt" contains information on the abundance of various bacterial operational taxonmic units (OTUs) in some 20 insect samples that we have sequenced; the last column contains information about taxonomy. How many OTUs there are that correspond to Gammaproteobacteria other than Sodalis?  
+   * File "OTU_table.txt" contains information on the abundance of various bacterial operational taxonomic units (OTUs) in some 20 insect samples that we have sequenced; the last column contains information about taxonomy. How many OTUs there are that correspond to Gammaproteobacteria other than Sodalis?  
    * File "Phorids_fastq_100_reads.fastq" contains raw sequencing data for phorid flies. How many of the 100 reads contain the sequence "GCCGCGGTAA" corresponding to a conserved portion of one of the amplification files? Save them to a separate file!  
-   * "For 100ish \*fastq.gz files in a specified directory, for example /mnt/matrix/symbio/raw_data/20200830_MiSeq/P-\*, copy them to your work directory, gunzip them, and create a file "line_counts.txt" with information on how many lines each file contains, as well as a file "top_reads.fastq" which contains the first read from each of these fastq files."  
+   * "For 20ish \*fastq.gz files in a specified directory, for example /mnt/qnap/users/symbio/workshops/workshop_20231124/illumina/*fastq.gz, copy them to your work directory, gunzip them, and create a file "line_counts.txt" with information on how many lines each file contains, as well as a file "top_reads.fastq" which contains the first read from each of these fastq files."
+
 &nbsp;  
   
 ### 3.3. A little test - previously covered material
@@ -19,8 +20,10 @@ How did you do? What are your solutions?
 The file "Updated_cicada_collection_data.txt" contains information about some insects that I collected in Chile. Except for the heading line, each subsequent line corresponds info about, among other things, collection_site_ID, genus, species...  
 (1) What commands would you use to check how many specimens of Tettigades undata were collected in Lonquimay?  
 (2) What commands would you use to create a file containing the heading and lines corresponding to Tettigades undata specimens from Lonquimay?   
+
+For 20ish \*fastq.gz files in a specified directory, for example /mnt/qnap/users/symbio/workshops/workshop_20231124/illumina/*fastq.gz, copy them to your work directory, gunzip them, and create a file "line_counts.txt" with information on how many lines each file contains, as well as a file "top_reads.fastq" which contains the first read from each of these fastq files.
   
-The folder /mnt/matrix/symbio/workshops/workshop_20210318/data/ contains some of the sequencing reads, in the fastq format, from our latest Oxford Nanopore run!  
+The folder /mnt/qnap/users/symbio/workshops/workshop_20231124/nanopore/*fastq contains some of the sequencing reads, in the fastq format, from one of our Oxford Nanopore run!  
 (3) How many reads there are, in total, in this folder?  
 (4) In your working directory, create a file with the top 10 reads from each of the files in that directory.  
   
