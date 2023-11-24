@@ -51,7 +51,7 @@ sed -i.bak 's/,/;/g' OTU_table.csv # edits "in place"; makes change to a file wh
 ```
 &nbsp;  
 
-### 3.5. Editing tables - cut, sort, uniq
+### 3.5. Editing tables - cut, sort, uniq, diff
 
 The command **cut** is most often use for getting selected columns of data from a table - with column numbers specified after the -f flag:  
 ```  
