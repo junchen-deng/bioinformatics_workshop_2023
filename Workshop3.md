@@ -28,7 +28,7 @@ The folder /mnt/matrix/symbio/workshops/workshop_20210318/data/ contains some of
   
 ### 3.4. sed - Search and replace
 
-We have previously covered grep - a powerful tool for searching text files.
+We have previously covered grep - a powerful tool for searching text files.  
 **sed** - "**s**tream **ed**itor" - is a powerful tool for editing text. It has a challenging syntax, the learning curve is steep, and you want to know regular expressions (which we'll cover during the next classes) to take the full advantage of it. Here, we'll just learn the basics. Check out this tutorial - [https://www.grymoire.com/Unix/Sed.html#uh-0](https://www.grymoire.com/Unix/Sed.html#uh-0) to get a sense of its functionality!  
   
 Basic syntax:
