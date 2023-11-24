@@ -11,7 +11,6 @@ Tools for logging in, copying files, etc. are platform-specific. Hopefully, they
 How did you do? What are your solutions?
    * File "OTU_table.txt" contains information on the abundance of various bacterial operational taxonomic units (OTUs) in some 20 insect samples that we have sequenced; the last column contains information about taxonomy. How many OTUs there are that correspond to Gammaproteobacteria other than Sodalis?  
    * File "Phorids_fastq_100_reads.fastq" contains raw sequencing data for phorid flies. How many of the 100 reads contain the sequence "GCCGCGGTAA" corresponding to a conserved portion of one of the amplification files? Save them to a separate file!  
-   * "For 20ish \*fastq.gz files in a specified directory, for example /mnt/qnap/users/symbio/workshops/workshop_20231124/illumina/*fastq.gz, copy them to your work directory, gunzip them, and create a file "line_counts.txt" with information on how many lines each file contains, as well as a file "top_reads.fastq" which contains the first read from each of these fastq files."
 
 &nbsp;  
   
