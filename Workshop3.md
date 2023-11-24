@@ -88,7 +88,11 @@ For which *Eciton* species we have data in Army_ant_COI_seqs.fasta?
 ```
 grep "Eciton" Army_ant_COI_seqs.fasta
 grep "Eciton" Army_ant_COI_seqs.fasta | cut -f 2-3 -d " " | sort | uniq
-```  
+```
+The command **diff** tells the difference between two files. However, you should always sort the file first!
+```
+diff <file1> <file2>
+```
 &nbsp;  
   
 ### 3.6. Loops
