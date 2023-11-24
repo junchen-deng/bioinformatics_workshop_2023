@@ -77,12 +77,12 @@ head OTU_table.txt | sort
 
 I have often used it for sorting informatively named sequence headings in my genome assembly files
 ```
-grep ">" /mnt/matrix/symbio/workshops/workshop_20210318/data/scaffolds.fasta | head  # That's how they look 
-grep ">" /mnt/matrix/symbio/workshops/workshop_20210318/data/scaffolds.fasta | wc -l # Lots of them!
+grep ">" /mnt/qnap/users/symbio/workshops/workshop_20231124/scaffolds.fasta | head  # That's how they look 
+grep ">" /mnt/qnap/users/symbio/workshops/workshop_20231124/scaffolds.fasta | wc -l # Lots of them!
 
-grep ">" /mnt/matrix/symbio/workshops/workshop_20210318/data/scaffolds.fasta | sort -t "_" -k 6 -r -n | head # Let's find those with the highest coverage!
+grep ">" /mnt/qnap/users/symbio/workshops/workshop_20231124/scaffolds.fasta | sort -t "_" -k 6 -r -n | head # Let's find those with the highest coverage!
 
-grep ">" /mnt/matrix/symbio/workshops/workshop_20210318/data/scaffolds.fasta | sort -t "_" -k 6 -r -n | head -1000 | sort -t "_" -k 4 -r -n | head # Let's find 10 longest among the 1000 with highest coverage!
+grep ">" /mnt/qnap/users/symbio/workshops/workshop_20231124/scaffolds.fasta | sort -t "_" -k 6 -r -n | head -1000 | sort -t "_" -k 4 -r -n | head # Let's find 10 longest among the 1000 with highest coverage!
 ```  
   
 The command **uniq** retains only unique values from a SORTED! file.  
@@ -110,8 +110,8 @@ for variable in [list of variables]; do task1; task2...; done
 Examples:
 ```
 for number in 1 2 3 4; do echo $number; done
-for fastq_file in /mnt/matrix/symbio/workshops/workshop_20210318/data/FAP34702*; do echo $fastq_file; done
-for fastq_file in /mnt/matrix/symbio/workshops/workshop_20210318/data/FAP34702*fastq; do echo $fastq_file; head -4 $fastq_file; done
+for fastq_file in /mnt/qnap/users/symbio/workshops/workshop_20231124/nanopore/*fastq; do echo $fastq_file; done
+for fastq_file in /mnt/qnap/users/symbio/workshops/workshop_20231124/nanopore/*fastq; do echo $fastq_file; head -4 $fastq_file; done
 ```
 &nbsp;  
   
