@@ -19,12 +19,12 @@ How did you do? What are your solutions?
 The file "Updated_cicada_collection_data.txt" contains information about some insects that I collected in Chile. Except for the heading line, each subsequent line corresponds info about, among other things, collection_site_ID, genus, species...  
 (1) What commands would you use to check how many specimens of Tettigades undata were collected in Lonquimay?  
 (2) What commands would you use to create a file containing the heading and lines corresponding to Tettigades undata specimens from Lonquimay?   
-
-For 20ish \*fastq.gz files in a specified directory, for example /mnt/qnap/users/symbio/workshops/workshop_20231124/illumina/*fastq.gz, copy them to your work directory, gunzip them, and create a file "line_counts.txt" with information on how many lines each file contains, as well as a file "top_reads.fastq" which contains the first read from each of these fastq files.
   
 The folder /mnt/qnap/users/symbio/workshops/workshop_20231124/nanopore/*fastq contains some of the sequencing reads, in the fastq format, from one of our Oxford Nanopore run!  
 (3) How many reads there are, in total, in this folder?  
 (4) In your working directory, create a file with the top 10 reads from each of the files in that directory.  
+
+(5) For 20ish \*fastq.gz files in a specified directory, for example /mnt/qnap/users/symbio/workshops/workshop_20231124/illumina/*fastq.gz, copy them to your work directory, gunzip them, and create a file "line_counts.txt" with information on how many lines each file contains, as well as a file "top_reads.fastq" which contains the first read from each of these fastq files.
   
 &nbsp;  
   
