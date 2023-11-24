@@ -150,9 +150,28 @@ source ~/.bashrc
   
 
 ### 3.8. Shell scripts
+Getting tired of running several commands one by one on the screen? You can include all the commands in a file and execute it on screen as software!
 
+Execution: ./yourbash.sh
+Basic syntax: 
+```
+#! /bin/bash
+<your commands>
+```
+Remember to give permission for the execution of the file by using **chmod**!
 
+A more advanced and useful usage of shell scripts is by adding arguments to your scripts. 
 
+Execution: ./yourbash.sh <First_argument> <Second_argument>
+Basic syntax: 
+```
+#! /bin/bash
+First_argument = $1
+Second_argument = $2
+....
+
+# referring to these arguments in the command using ${First_argument}, ${Second_argument}..
+```
 
 &nbsp;  
   
