@@ -101,22 +101,22 @@ Dictyophara nakanonis Matsumura, 1910
    - let's truncate generic names  
    - let's undo previous changes, and instead, put the authority and the year of description in bracket  
   
-**Task 2. In a list of annoyingly complicated fastq file names**,  
-   - let's truncate them to go from "A_CALKRU1_S173_L001_R1_001.fastq" to "CALKRU1_R1.fastq"  
-   - some of the samples don't have number after the six-letter species abbreviation... let's add "3" in those cases ("CALKRU_R1.fastq" ->  "CALKRU3_R1.fastq")  
-   - the list of files contains only R1 reads... let's use them to prepare a tab-delimited list of R1 and R2 reads corresponding to the same sample ("CALKRU3   CALKRU3_R1.fastq    CALKRU3_R2.fastq")  
+**Task 2. In the *Phorid_library_list.txt***, 
+   - let's clean the text to keep only the file names and remove the '.gz' tail. The output should look like "P-Neg-PCR_S521_L001_R1_001.fastq"
+   - let's truncate them to go from, for example, "P-SACN3P-1_S477_L001_R1_001.fastq" to "P-SACN3P-1_R1.fastq"   
+   - the list of files contains both R1 and R2 reads. Let's reformat them to a tab-delimited list that R1 and R2 files corresponding to the same sample are in the same line, such as "P-SACN3P-1   P-SACN3P-1_R1.fastq    P-SACN3P-1_R2.fastq"  
 
-**Task 3. In the army ant COI sequence list**,
+**Task 3. In the *Army_ant_COI_seqs.fasta***,
    - let's change the sequence organization so that the sequences spread across multiple lines are always in one;
    - let's edit sequence names so that Accession_no, Genus, Species, and Isolate are separated by underscores, everything else removed
 
-**Task 4. In the 100 phorid fastq reads dataset**,
+**Task 4. In the *Phorids_fastq_100_reads.fastq***,
    - let's change the format from fastq to fasta
    - how many reads contain the forward primer sequence GTGYCAGCMGCCGCGGTAA? Note ambiguous positions... check [IUPAC codes](https://www.bioinformatics.org/sms/iupac.html) for the explanation
    - let's remove all the reads that don't have the primer!
    - let's trim from the reads the primer sequences (which can be preceded by up to three other nucleotides)
 
-**Task 5. In the Updated_cicada_collection_data.txt**,
+**Task 5. In the *Updated_cicada_collection_data.txt***,
    - let's change the format of the collection date. It is currently "30-Dec-15" or similar; we want it to go like "2015-Dec-30".
 
 
