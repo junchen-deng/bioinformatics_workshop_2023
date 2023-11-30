@@ -89,7 +89,8 @@ Capturing the search term and using it in replacements!
 ### REGEX - let's apply it to some real-life situations!
 We will start during the class, and try to get as far as we can. Try to resolve the remaining examples as **homework**!
 
-**Task 1. In a list of Dictyopharidae planthopper species names** (Please download the file "workshop_20231201/Dictyopharidae_species_list.txt" on Teams), 
+**Task 1. In a list of Dictyopharidae planthopper species names**  
+(Please first download the file "workshop_20231201/Dictyopharidae_species_list.txt" on Teams), 
    - let's remove authority and year of description  
    - let's truncate generic names  
    - let's undo previous changes, and instead, put the authority and the year of description in bracket  
