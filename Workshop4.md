@@ -1,4 +1,4 @@
-# Workshop 4 (25th March 2021). Introduction to Regular Expressions
+# Workshop 4 (1st December 2023). Introduction to Regular Expressions
 
 ### Getting the right text editor
 * Mac: TextWrangler / BBedit, ...
