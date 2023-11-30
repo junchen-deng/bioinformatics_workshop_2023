@@ -23,7 +23,7 @@
 
 ### Terms and challenges
 * Character types: word, numeric, whitespace, special...
-* End-of-line (EOL) --- there is a character/characters for that! Represented by different character combinations on different platforms!
+* **End-of-line (EOL)** --- there is a character/characters for that! Represented by different character combinations on different platforms!
     - Linux: LF (line feed) "\n"  
     - some older Macs: CR (carriage return) "\r"  
     - Windows: LF followed by CR "\n\r"  
@@ -40,28 +40,30 @@ You can do basic search-replace in almost any text-editing software:
 &nbsp;  
   
 **But you can go so much further once you learn how to use wildcards and special characters in REGEX!**  
-  * **\w** --- any letter (A-z) or digit (0-9) and the underscore character (_).  
-  * **\d** --- any digit (0-9).  
-  * **\t**, **\r**, **\n** --- whitespace characters
+  * **\w** --- any letter (A-z) or digit (0-9) and the underscore character (_).
+      * **\W** --- any character that's **not** a letter, digit, or underscore
+  * **\d** --- any digit (0-9).
+      * **\D** --- any character that's **not** a digit
+  * **\t** --- tab characters
+  * **\r**, **\n** --- End-of~line characters
   * **\s** --- any whitespace character (space, tab, end-of-line)   
-  
+      * **\S** --- any character that's **not** a whitespace character
 &nbsp;  
 
-The letters used to form wildcards are case sensitive: \W, \D, \S mean just the opposite!  
-  * **\W** --- any character that's **not** a letter, digit, or underscore
-  * **.** --- any character
-  * **[CGTAcgta]**, **[A-Z]**  --- one of the specified characters, or characters in the range  
+Some more building blocks for REGEX: **.** (dot), **[]**, **\** 
+  * **.** --- Any letter, digit, or symbol, **except** end-of-line characters
+  * **[CGTAcgta]**, **[A-Z]**  --- **one** of the specified characters, or characters in the range  
   * **[^CGTAcgta]**, **[^A-Z]** --- anything **OTHER than** characters in the range  
-  * **\\** ---  used to escape special (punctuation) characters  
+  * **\\** ---  used to **escape** special (punctuation) characters  
   * **\\\\** --- escaped escape :)  
   
 &nbsp;  
 
 We often want to search for multiple characters of the same type, like, multiple "A" characters!  
   * **A** --- searching for one A :)
-  * **\d+** --- searching for one or more digits  
-  * **\w\*** --- searching for zero or more word characters  
-  * **[AT]{10,20}** --- searching for a series of A or T characters of the length between 10 and 20  
+  * **\d+** --- searching for **one or more** digits  
+  * **\w*** --- searching for **zero or more** word characters  
+  * **[AT]{10,20}** --- searching for a series of A **or** T characters of the length between 10 and 20  
   * **[A-Z]{3,}** --- searching for a series of at least three capital letters  
 
 &nbsp;  
