@@ -50,12 +50,13 @@ You can do basic search-replace in almost any text-editing software:
       * **\S** --- any character that's **not** a whitespace character
 &nbsp;  
 
-Some more building blocks for REGEX: **.**, **[]**, **\\** 
+Some more building blocks for REGEX: 
   * **.** --- Any letter, digit, or symbol, **except** end-of-line characters
-  * **[CGTAcgta]**, **[A-Z]**  --- **one** of the specified characters, or characters in the range  
-  * **[^CGTAcgta]**, **[^A-Z]** --- anything **OTHER than** characters in the range  
+  * **[]** --- making your own wildcards; matching **one** character inside the bracket
+      * **[CGTAcgta]**, **[A-Z]**, **[A-z]**  --- **one** of the specified characters or characters in the range "-"  
+      * **[^CGTAcgta]**, **[^A-Z]** --- anything **OTHER than** the defined characters 
   * **\\** ---  used to **escape** special (punctuation) characters  
-  * **\\\\** --- escaped escape :)  
+      * **\\\\** --- escaped escape :)  
   
 &nbsp;  
 
