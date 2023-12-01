@@ -119,8 +119,8 @@ GDF0105_S381_R1_001.fastq.gz
 GDF0105_S381_R2_001.fastq.gz
 ```
    - let's clean the names to keep only the sample names (GDF0101) and read number (R1). The output should change from, for example, "GDF0101_S377_R1_001.fastq.gz" to "GDF0101_R1.fastq.gz"
-   - let's prepare a set of Linux commands for simplifying the file names, for example, "mv GDF0101_S377_R1_001.fastq.gz GDF0101_R1.fastq.gz".
-   - let's construct the list of samples containing sample name as well as R1 and R2 read files. Let's reformat them to a tab-delimited list that R1 and R2 files corresponding to the same sample are in the same line, such as "GDF0101   GDF0101_R1.fastq.gz    GDF0101_R1.fastq.gz"
+   - let's undo the action and prepare a set of Linux commands for simplifying the file names, for example, "mv GDF0101_S377_R1_001.fastq.gz GDF0101_R1.fastq.gz".
+   - let's construct the list of samples containing sample name as well as R1 and R2 read files. Let's reformat them to a tab-delimited list that R1 and R2 files corresponding to the same sample are in the same line, such as "GDF0101   GDF0101_R1.fastq.gz    GDF0101_R2.fastq.gz"
 
 
 **Task 3. In the *Army_ant_COI_seqs.fasta***,
