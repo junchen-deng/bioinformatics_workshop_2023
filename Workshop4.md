@@ -102,24 +102,62 @@ Dictyophara nakanonis Matsumura, 1910
    - let's truncate generic names  
    - let's undo previous changes, and instead, put the authority and the year of description in bracket  
   
-**Task 2. In the *Phorid_library_list.txt***, 
-   - let's clean the text to keep only the file names and remove the '.gz' tail. The output should look like "P-Neg-PCR_S521_L001_R1_001.fastq"
-   - let's truncate them to go from, for example, "P-SACN3P-1_S477_L001_R1_001.fastq" to "P-SACN3P-1_R1.fastq"   
-   - the list of files contains both R1 and R2 reads. Let's reformat them to a tab-delimited list that R1 and R2 files corresponding to the same sample are in the same line, such as "P-SACN3P-1   P-SACN3P-1_R1.fastq    P-SACN3P-1_R2.fastq"  
+**Task 2. In the *Amplicon_library_list.txt***, 
+```
+(base) piotr.lukasik@azor:/mnt/qnap/users/symbio/raw_data/illumina/amplicon_sequencing/20231016_NextSeq_amplicon_workshop/GDF$ ls * | head
+GDF0101_S377_R1_001.fastq.gz
+GDF0101_S377_R2_001.fastq.gz
+GDF0102_S378_R1_001.fastq.gz
+GDF0102_S378_R2_001.fastq.gz
+GDF0103_S379_R1_001.fastq.gz
+GDF0103_S379_R2_001.fastq.gz
+GDF0104_S380_R1_001.fastq.gz
+GDF0104_S380_R2_001.fastq.gz
+GDF0105_S381_R1_001.fastq.gz
+GDF0105_S381_R2_001.fastq.gz
+```
+   - let's clean the names to keep only the sample names (GDF0101) and read number (R1). The output should change from, for example, "GDF0101_S377_R1_001.fastq.gz" to "GDF0101_R1.fastq.gz"
+   - let's prepare a set of Linux commands for simplifying the file names, for example, "mv GDF0101_S377_R1_001.fastq.gz GDF0101_R1.fastq.gz".
+   - let's construct the list of samples containing sample name as well as R1 and R2 read files. Let's reformat them to a tab-delimited list that R1 and R2 files corresponding to the same sample are in the same line, such as "GDF0101   GDF0101_R1.fastq.gz    GDF0101_R1.fastq.gz"
 
 **Task 3. In the *Army_ant_COI_seqs.fasta***,
-   - let's change the sequence organization so that the sequences spread across multiple lines are always in one;
+```
+>KX983244.1 Eciton burchellii isolate 6 cytochrome oxidase subunit I (COI) gene, partial cds; mitochondrial
+ATACTATACTTTATTTTTTCATTCTGAGCAGGAATATTAGGATCCTCAATAAGTATAATTATTCGCTTAG
+AACTAGGAACATGTGGGTCCCTTCTTAATAACGACGCTGTATTCAACTCATTGATCACTAGACACGCATT
+TGTAATAATTTTTTTTACAGTTATGCCTTTTATAATTGGGGGATTTGGAAATTTCTTAGTCCCATTAATA
+CGGGGCTATTACTATACTTTTAACAGACCGCAATTTAAAT
+>KX983246.1 Neivamyrmex opacithorax isolate CS197 cytochrome oxidase subunit I (COI) gene, partial cds; mitochondrial
+ATACTATATTTTATCTTTTCATTTTGGGCCGGAATACTAGGATCATCTATAAGAATAATCATTCGATTAG
+AACTAGGAACCTGTGGTTCTATAATTAATAACGAACAAGTATTCAACTCTATAATTACAAGACACGCATT
+```
+   - let's change the sequence organization so that the nucleotide sequences spread across multiple lines are always in one;
    - let's edit sequence names so that Accession_no, Genus, Species, and Isolate are separated by underscores, everything else removed
 
 **Task 4. In the *Phorids_fastq_100_reads.fastq***,
+```
+@M01530:53:000000000-J8H3B:1:1101:16182:1770 1:N:0:508
+AGTGTCAGCCGCCGCGGTAATACGGAGAGGGCTAGCGTTATTCGGAATTATTGGGCGTAAAGGGCGCGTAGGCTGGTTAATAAGTTAAAAGTGAAATCCCGAGGCTTAACCTTGGAATTGCTTTTAAGACTATTAATCTAGAGATTGAAAGAGGATAGAGGAATTCCTGATGTAGAGGTAAAATTCGTAAATATTAGGAGGAACACCAGTGGCGAAGGCGTCTATCTGGTTCAAATCTGACGCTGAAGCGCGAAGGCGTGGGGAGCAAACAGGATTAGAAACCCGCGTAGTCCAAGATCG
++
+-6A@CFFFGGGGGEEEGGDGFFGGE>@FCFGGGGGGCGEEGGGG<:CFGFGG9F8EFGC:@E<C:=FGGDGGFGGCFGGGGGFFGGFGFGGGFGGGGGGGGGEGGGGGGGGGGFGDGGGFGGGGGGGDGGGGGGGGGGGGFGGFGGGFCCE,DCFFF7DC,F@FGGGGGFGGG;FAF@FGFFAFGGGGFGGGBFGGGFGFGCGGGGGGGGFGGEDGGGC8EGGGDGGCCCFGGCCEGGGFGDGGGGGGGGGCGGDGGGGDGGEG5BGGGGGG@@FFFFF6:FGGGGDFFFFFFFFF?FF<
+@M01530:53:000000000-J8H3B:1:1101:20015:2113 1:N:0:508
+ACCTGATATGGCCTTTCCTCGAATAAATAATGTAAGTTTCTGAATATTACCCCCATCTATCACTTTACTACTTTTAAGAAGAATAATAGAAAATGGAGCTGGAACAGGATGAACTGTTTACCCTCCTTTATCCGCCAATATTGCCCATAGAGGAACTTCTATTGATTCAGCTATTTTTTCTTTACATTTAGCTGGAATTTCCTCAATTCTAGGAGCTATCAATTTTATTTCAACAATTATTAATATACGCTCTTTAAAAATAACACTTGACCGAATACCTTTACTTGTATGATCAATTAG
++
+CCCCCGGGGGFGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGFGGGCCFGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGFFGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGDFGGCGGGGGFGGGGGGGGGGGGDGGGGGGGGGCFGGGGGGGGGGGGGGGGGGGGFGGGGGGGGGGGGGGGFGGGGGGFGFFGDGGGGGGGGGGDGGGGGE5DFGGGFGGGGGFFFGGF??>B>?B?@FFGGFEGGCF8BAAFFFEFFF)
+```
    - let's change the format from fastq to fasta
    - how many reads contain the forward primer sequence GTGYCAGCMGCCGCGGTAA? Note ambiguous positions... check [IUPAC codes](https://www.bioinformatics.org/sms/iupac.html) for the explanation
    - let's remove all the reads that don't have the primer!
    - let's trim from the reads the primer sequences (which can be preceded by up to three other nucleotides)
 
 **Task 5. In the *Updated_cicada_collection_data.txt***,
+```
+Sample_no	Coll_date	Coll_location	Sex	Preservation	Genus	Tentative_morph_ID	Gene_Capture_ID																	
+Claudio	30-Nov-14	Las Condes	F	ethanol	Tettigades	chilensis	chilensis																	
+JM002	04-Jan-16	L1 Trapatrapa (Rio Queuco)	F	70% ethanol	Tettigades	ulnaria (23Mar16)	ulnaria																	
+JM004	04-Jan-16	L1 Trapatrapa (Rio Queuco)	F	70% ethanol	Tettigades	undata (28June16)	undata
+```
    - let's change the format of the collection date. It is currently "30-Dec-15" or similar; we want it to go like "2015-Dec-30".
-
 
 
 
