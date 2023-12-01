@@ -52,16 +52,12 @@ You can do basic search-replace in almost any text-editing software:
 
 Some more building blocks for REGEX: 
   * **.** --- Any letter, digit, or symbol, **except** end-of-line characters
-  * **+** --- One or more of the preceding character
-  * ***** --- Zero or more of the preceding character
-      * **.+** --- One or more of any character
-      * **\d*** --- Zero or more digits
-        
   * **[]** --- making your own wildcards; matching **one** character inside the bracket
       * **[CGTAcgta]**, **[A-Z]**, **[A-z]**  --- **one** of the specified characters or characters in the range "-"  
       * **[^CGTAcgta]**, **[^A-Z]** --- anything **OTHER than** the defined characters 
-  * **\\** ---  used to **escape** special (punctuation) characters  
-      * **\\\\** --- escaped escape :)  
+  * **\\** ---  used to **escape** special (punctuation) characters
+      * **\\.** --- an actual escaped dot, rather than any character!   
+      * **\\\\** --- escaped "backslash" character :)  
   
 &nbsp;  
 
