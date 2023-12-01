@@ -90,6 +90,7 @@ Capturing the search term and using it in replacements!
 ### REGEX - let's apply it to some real-life situations!
 We will start during the class, and try to get as far as we can. Try to resolve the remaining examples as **homework**!
 
+
 **Task 1. In a list of Dictyopharidae planthopper species names**,
 ```
 Dictyophara europaea Linnaeus, 1767
@@ -101,6 +102,7 @@ Dictyophara nakanonis Matsumura, 1910
    - let's remove authority and year of description  
    - let's truncate generic names  
    - let's undo previous changes, and instead, put the authority and the year of description in bracket  
+
   
 **Task 2. In the *Amplicon_library_list.txt***, 
 ```
@@ -120,6 +122,7 @@ GDF0105_S381_R2_001.fastq.gz
    - let's prepare a set of Linux commands for simplifying the file names, for example, "mv GDF0101_S377_R1_001.fastq.gz GDF0101_R1.fastq.gz".
    - let's construct the list of samples containing sample name as well as R1 and R2 read files. Let's reformat them to a tab-delimited list that R1 and R2 files corresponding to the same sample are in the same line, such as "GDF0101   GDF0101_R1.fastq.gz    GDF0101_R1.fastq.gz"
 
+
 **Task 3. In the *Army_ant_COI_seqs.fasta***,
 ```
 >KX983244.1 Eciton burchellii isolate 6 cytochrome oxidase subunit I (COI) gene, partial cds; mitochondrial
@@ -133,6 +136,7 @@ AACTAGGAACCTGTGGTTCTATAATTAATAACGAACAAGTATTCAACTCTATAATTACAAGACACGCATT
 ```
    - let's change the sequence organization so that the nucleotide sequences spread across multiple lines are always in one;
    - let's edit sequence names so that Accession_no, Genus, Species, and Isolate are separated by underscores, everything else removed
+
 
 **Task 4. In the *Phorids_fastq_100_reads.fastq***,
 ```
@@ -150,6 +154,7 @@ CCCCCGGGGGFGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGFGGGCCFGGGGGGGGGGGGGGGGGGGGGGGG
    - let's remove all the reads that don't have the primer!
    - let's trim from the reads the primer sequences (which can be preceded by up to three other nucleotides)
 
+
 **Task 5. In the *Updated_cicada_collection_data.txt***,
 ```
 Sample_no	Coll_date	Coll_location	Sex	Preservation	Genus	Tentative_morph_ID	Gene_Capture_ID																	
@@ -160,5 +165,17 @@ JM004	04-Jan-16	L1 Trapatrapa (Rio Queuco)	F	70% ethanol	Tettigades	undata (28Ju
    - let's change the format of the collection date. It is currently "30-Dec-15" or similar; we want it to go like "2015-Dec-30".
 
 
-
+**Task 6. Using *zOTU_table.txt*** as input,
+```
+TU_ID	OTU_assignment	Taxonomy	Sequence	Total	SEG1_AUC0407	SEG1_AUC0408	SEG1_AUC0409	SEG1_AUC0410	SEG1_AUC0449
+Zotu1	otu1	Eukaryota(1.00),Diplocolenus_abdominalis(1.00)	ATTAAATAATATAAGATTTTGATTACTAC	154619	0	0	0	0	0
+Zotu6	otu1	Eukaryota(1.00),Diplocolenus_abdominalis(1.00)	ATTAAATAATATAAGATTTCGATTACTAC	8734	0	0	0	0	0
+Zotu17	otu1	Eukaryota(1.00),Diplocolenus_abdominalis(0.65)	ATTGAATAATATTAGATTTTGATTACTAC	1163	0	0	0	0	0
+Zotu2	otu2	Eukaryota(1.00),Verdanus(0.93),Verdanus_evansi(0.93)	ATTGAATAATATAAGATTTTGATTACTACCGCCATCACT	14014	0	0	3846	0	0
+```
+   - export sequences in the fasta format, with headings containing information about zOTU, OTU, and total read number:
+```
+>Zotu1_otu1_reads-154619
+ATTAAATAATATAAGATTTTGATTACTAC
+```
 
