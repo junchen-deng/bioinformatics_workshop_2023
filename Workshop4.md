@@ -41,17 +41,22 @@ You can do basic search-replace in almost any text-editing software:
   
 **But you can go so much further once you learn how to use wildcards and special characters in REGEX!**  
   * **\w** --- any letter (A-z) or digit (0-9) and the underscore character (_).
-      * **\W** --- any character that's **not** a letter, digit, or underscore
+      * **\W** --- any character that is **not** a letter, digit, or underscore
   * **\d** --- any digit (0-9).
-      * **\D** --- any character that's **not** a digit
+      * **\D** --- any character that is **not** a digit
   * **\t** --- tab characters
-  * **\r**, **\n** --- End-of~line characters
+  * **\r**, **\n** --- End-of-line characters
   * **\s** --- any whitespace character (space, tab, end-of-line)   
-      * **\S** --- any character that's **not** a whitespace character
+      * **\S** --- any character that is **not** a whitespace character
 &nbsp;  
 
 Some more building blocks for REGEX: 
   * **.** --- Any letter, digit, or symbol, **except** end-of-line characters
+  * **+** --- One or more of the preceding character
+  * ***** --- Zero or more of the preceding character
+      * **.+** --- One or more of any character
+      * **\d*** --- Zero or more digits
+        
   * **[]** --- making your own wildcards; matching **one** character inside the bracket
       * **[CGTAcgta]**, **[A-Z]**, **[A-z]**  --- **one** of the specified characters or characters in the range "-"  
       * **[^CGTAcgta]**, **[^A-Z]** --- anything **OTHER than** the defined characters 
