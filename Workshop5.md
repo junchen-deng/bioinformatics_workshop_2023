@@ -42,19 +42,19 @@ To use extended regular expressions, use:
 
 How to identify labels such as PL123 in the collection of army ant COI sequences?
 `
-egrep PL\d+" Piotr_army_ant_COI_sequences.fasta
+egrep "PL\d+" Army_ant_COI_sequences.fasta
 `    
 --- this works on my Mac, but not on our cluster! Remember that \d is not routinely recognized, use [0-9] instead!      
-`
-egrep "PL[0-9]+" Piotr_army_ant_COI_sequences.fasta
-`  
+```
+egrep "PL[0-9]+" Army_ant_COI_sequences.fasta
+```
 --- now it works on the cluster! If we used BRE (grep), it wouldn't have.  
    
 Remember that you can grep/egrep within pipelines --- use | to pipe the output of one command to another command, including head, tail, wc, grep...  
-`
-  grep "Eciton" Piotr_army_ant_COI_sequences.fasta | wc -l
-  egrep "Eciton|Labidus" Piotr_army_ant_COI_sequences.fasta | egrep "PL[0-9]+"  
-`  
+```
+  grep "Eciton" Army_ant_COI_sequences.fasta | wc -l
+  egrep "Eciton|Labidus" Army_ant_COI_sequences.fasta | egrep "PL[0-9]+"  
+```
   
   &nbsp;  
     
