@@ -1,4 +1,4 @@
-# Workshop 5 (1st April 2021). Getting deeper into regular expressions!
+# Workshop 5 (8st December 2023). Getting deeper into regular expressions!
 
 ### 5.1 Last week's REGEX exercises: how did you do?
 
