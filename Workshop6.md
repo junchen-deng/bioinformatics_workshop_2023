@@ -120,7 +120,7 @@ Other useful arguments:
 * evalue
 * max_target_seqs
 * max_hsps
-* pident
+* perc_identity
 * num_threads
 &nbsp;   
 
