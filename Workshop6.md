@@ -1,4 +1,4 @@
-# Workshop 6 (15th December 2023). Unix & REGEX in the real world - some useful tools :)
+# Workshop 6 (15th December 2023). Biological research using Unix and REGEX - some useful tools :)
 
 ### 6.1. Last week's REGEX exercises: how did you do?
 &nbsp;  
@@ -44,9 +44,92 @@ where the first portion is the sample name (useful!), second - number on the lis
 How would you change the names of twenty files (at /mnt/qnap/users/symbio/workshops/workshop_20231215/reads/, or in files on Teams) to eliminate the second and fourth portion of the name - to obtain "BEE9081_R1.fastq"?  
 &nbsp;  
 
+### 6.3. BLAST
+BLAST - that is an acronym for **Basic Local Alignment Search Tool** - a sequence comparison software developed by NCBI:[https://blast.ncbi.nlm.nih.gov/Blast.cgi](https://blast.ncbi.nlm.nih.gov/Blast.cgi)
+BLAST finds regions of similarity between biological sequences. The program compares nucleotide or protein sequences to sequence databases and calculates the statistical significance.
+
+There are several different tools within BLAST - **blastn**, **blastp**, **blastx**, **tblastn**...
+And different search algorithms are available - **blastn**, **megablast**, ...
+
+Most of us have probably used the web portal. However, blast can be an extremely useful command-line tool, installed on all our clusters.
+
+Before running command-line blast, you need your "query" fasta file, and your "database" fasta file. You can use an existing database - like our COI sequence database at **/mnt/qnap/users/symbio/software/databases/MIDORI_with_tax_spikeins_endo_RDP.fasta**
+
+Or, you can make your custom "database" into a BLAST-recognizable database using **makeblastdb**
+
+```
+makeblastdb -in EUROBEE_db.fasta -dbtype nucl
+```
+
+Now, you are ready to do your searches! Basic syntax ---
+```
+blastn -query one_BEE_barcode.fasta -db /mnt/qnap/users/symbio/software/databases/MIDORI_with_tax_spikeins_endo_RDP.fasta > one_BEE_barcode.blastn
+```
+
+But the results are not easy to process... thankfully, there are many parameters for you to play with!
+
+```
+(base) piotr.lukasik@azor:~/workshops/workshop_20231215$ blastn --help
+USAGE
+  blastn [-h] [-help] [-import_search_strategy filename]
+    [-export_search_strategy filename] [-task task_name] [-db database_name]
+    [-dbsize num_letters] [-gilist filename] [-seqidlist filename]
+    [-negative_gilist filename] [-negative_seqidlist filename]
+    [-taxids taxids] [-negative_taxids taxids] [-taxidlist filename]
+    [-negative_taxidlist filename] [-entrez_query entrez_query]
+    [-db_soft_mask filtering_algorithm] [-db_hard_mask filtering_algorithm]
+    [-subject subject_input_file] [-subject_loc range] [-query input_file]
+    [-out output_file] [-evalue evalue] [-word_size int_value]
+    [-gapopen open_penalty] [-gapextend extend_penalty]
+    [-perc_identity float_value] [-qcov_hsp_perc float_value]
+    [-max_hsps int_value] [-xdrop_ungap float_value] [-xdrop_gap float_value]
+    [-xdrop_gap_final float_value] [-searchsp int_value] [-penalty penalty]
+    [-reward reward] [-no_greedy] [-min_raw_gapped_score int_value]
+    [-template_type type] [-template_length int_value] [-dust DUST_options]
+    [-filtering_db filtering_database]
+    [-window_masker_taxid window_masker_taxid]
+    [-window_masker_db window_masker_db] [-soft_masking soft_masking]
+    [-ungapped] [-culling_limit int_value] [-best_hit_overhang float_value]
+    [-best_hit_score_edge float_value] [-subject_besthit]
+    [-window_size int_value] [-off_diagonal_range int_value]
+    [-use_index boolean] [-index_name string] [-lcase_masking]
+    [-query_loc range] [-strand strand] [-parse_deflines] [-outfmt format]
+    [-show_gis] [-num_descriptions int_value] [-num_alignments int_value]
+    [-line_length line_length] [-html] [-sorthits sort_hits]
+    [-sorthsps sort_hsps] [-max_target_seqs num_sequences]
+    [-num_threads int_value] [-mt_mode int_value] [-remote] [-version]
+
+DESCRIPTION
+   Nucleotide-Nucleotide BLAST 2.14.1+
+```
+
+One of the most useful is **-outfmt** --- and I virtually always run my searches with `-outfmt 6` argument. Let's run it, display the top lines ...
+```
+(base) piotr.lukasik@azor:~/workshops/workshop_20231215$ blastn -query one_BEE_barcode.fasta -db /mnt/qnap/users/symbio/software/databases/MIDORI_with_tax_spikeins_endo_RDP.fasta -outfmt 6 | head
+BEE4001	KT074052.1.<1.>688;tax=d:Eukaryota,p:Arthropoda,c:Insecta,o:Hymenoptera,f:Halictidae,g:Lasioglossum,s:Lasioglossum_calceatum	100.000	418	0	0	1	418	255	672	0.0	773
+BEE4001	KJ839535.1.<1.>658;tax=d:Eukaryota,p:Arthropoda,c:Insecta,o:Hymenoptera,f:Halictidae,g:Lasioglossum,s:Lasioglossum_calceatum	100.000	418	0	0	1	418	241	658	0.0	773
+BEE4001	JQ909766.1.<1.>654;tax=d:Eukaryota,p:Arthropoda,c:Insecta,o:Hymenoptera,f:Halictidae,g:Lasioglossum,s:Lasioglossum_albipes	100.000	418	0	0	1	418	231	648	0.0	773
+BEE4001	JQ909752.1.<1.>654;tax=d:Eukaryota,p:Arthropoda,c:Insecta,o:Hymenoptera,f:Halictidae,g:Lasioglossum,s:Lasioglossum_albipes	100.000	418	0	0	1	418	231	648	0.0	773
+BEE4001	JQ909765.1.<1.>654;tax=d:Eukaryota,p:Arthropoda,c:Insecta,o:Hymenoptera,f:Halictidae,g:Lasioglossum,s:Lasioglossum_albipes	99.761	418	1	0	1	418	231	648	0.0	767
+```
+...and see how to interpret the results, and customize the output! [https://www.metagenomics.wiki/tools/blast/blastn-output-format-6](https://www.metagenomics.wiki/tools/blast/blastn-output-format-6)
+&nbsp;   
+
+Other useful arguments:
+* task
+* evalue
+* max_target_seqs
+* max_hsps
+* pident
+* num_threads
+&nbsp;   
+
+Let's play with them!
 
 
-### 6.3. screen
+
+
+### 6.4. screen
 Typically, a Unix session lasts for as long as you have an active connection to the cluster. If your job takes 24h, and you want to go home and bring your laptop with you at some point, you have a problem...   
 **screen** software allows you to create and manage virtual Unix sessions. Check out the tutorial at [https://linuxize.com/post/how-to-use-linux-screen/](https://linuxize.com/post/how-to-use-linux-screen/)
 &nbsp;   
@@ -65,7 +148,7 @@ Ctrl + a, :quit        # kills the virtual session
 &nbsp;  
 
 
-### 6.4. conda
+### 6.5. conda
 Conda is a package manager and environment manager that you use within command line environment. 
 Check [https://conda.io/projects/conda/en/latest/user-guide/getting-started.html](https://conda.io/projects/conda/en/latest/user-guide/getting-started.html) for a tutorial!
 It is installed on our computing clusters.
@@ -79,8 +162,4 @@ conda deactivate          # deactivates environments
 ```
 &nbsp;
 
-  
-### 6.5. BLAST
-BLAST - that is an acronym for **Basic Local Alignment Search Tool** - a sequence comparison software developed by NCBI:[https://blast.ncbi.nlm.nih.gov/Blast.cgi](https://blast.ncbi.nlm.nih.gov/Blast.cgi)
-BLAST finds regions of similarity between biological sequences. The program compares nucleotide or protein sequences to sequence databases and calculates the statistical significance.
   
