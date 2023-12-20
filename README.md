@@ -50,9 +50,9 @@ We will be meeting on Fridays at 13:00 at room 1.0.4 at the Institute of Environ
   
 ### [Workshop 6 (15th December). Unix and REGEX in the real world](Workshop6.md)
    * Homework
-   * Screen
-   * $PATH and .bashrc
-   * conda
+   * command rename
+   * using command-line BLAST
+   * screen, conda
 &nbsp;  
   
 ### [Workshop P1 (date TBD). Introduction to programming](WorkshopP1.md)
