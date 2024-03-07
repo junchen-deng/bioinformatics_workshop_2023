@@ -2,7 +2,7 @@
 
 ### Workshop 1. Introduction to Linux
 * What is Linux/Unix?
-* Basic commands: **pwd**, **ls**, **cd**, **history**, **mkdir**, **mv**, **cp**, **rm**
+* Basic commands: **pwd**, **ls**, **cd**, **history**, **mkdir**, **mv**, **cp**, **rm**, **man**, **--help**
 
 ### Workshop 2. Working with text files
 * Folder and file permissions: **chmod**
