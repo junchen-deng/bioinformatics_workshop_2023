@@ -118,7 +118,7 @@ Alternatively, in some cases, you may want to use ">>", or "append" instead, whi
    grep -B 2 "Eciton" Army_ant_COI_seqs.fasta    # lists also N lines before those identified
    grep -v "Eciton" Army_ant_COI_seqs.fasta      # lists lines WITHOUT the specified string
    ```
-   - Note that **grep** might output results with the double-dash separator **'--'**, like what you got from **grep -A 1** and **grep -B 2**. You can add the argument **--no-group-separator** to prevent the separator. Note that this argument may not be available in all versions of **grep**.
+   - Note that **grep** might output results with the double-dash separator **'--'**, like what you got from **grep -A 1** and **grep -B 2**. You can add the argument **--no-group-separator** to prevent the separator. Note that this argument may not be available in some versions of **grep**.
    ```
    grep -A 1 --no-group-separator "Eciton" Army_ant_COI_seqs.fasta    # lists N lines after each identified text string and remove the separator '--'!  
    ```
