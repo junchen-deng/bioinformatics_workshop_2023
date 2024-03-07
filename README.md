@@ -1,4 +1,4 @@
-# Bioinformatics workshop 2024: information and materials
+# Bioinformatics workshop 2023-24: information and materials
 This repository will contain the approximate schedule and the list of notes and materials for the informal bioinformatics workshop taught by Junchen Deng and Piotr Łukasik at the Institute of Environmental Sciences, during the winter term of 2023/24 academic year. This is very much work in progress --- but hopefully, will help you stay on top of things!
 &nbsp;  
 
