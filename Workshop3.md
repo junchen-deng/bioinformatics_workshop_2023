@@ -75,6 +75,10 @@ head OTU_table.txt | sort
 ```  
 
 I have often used it for sorting informatively named sequence headings in my genome assembly files
+**-t** allows you to set a field-separator, like underscore(_)
+**-k [num]** allows you to sort by the position indicated by the field-separator **-t**
+**-r** reverse the order of comparison
+**-n** sort by numerical value
 ```
 grep ">" /mnt/qnap/users/symbio/workshops/workshop_20231124/scaffolds.fasta | head  # That's how they look 
 grep ">" /mnt/qnap/users/symbio/workshops/workshop_20231124/scaffolds.fasta | wc -l # Lots of them!
