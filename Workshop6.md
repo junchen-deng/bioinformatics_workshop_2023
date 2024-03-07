@@ -126,8 +126,7 @@ Other useful arguments:
 
 Let's play with them!
 
-
-
+Nowadays, with huge amounts of sequencing data and big databases, one of the problem with BLAST is its speed. BLAST can be super slow when searching for many sequences in a huge database (using more cores doesn't seem to make it faster). One alternative for BLAST is **DIAMOND** (https://github.com/bbuchfink/diamond), which is a re-write of BLAST targeting protein and translated DNA searches. In other words, DIAMOND can replace blastx and blastp with a 100-fold increase in running speed.    
 
 ### 6.4. screen
 Typically, a Unix session lasts for as long as you have an active connection to the cluster. If your job takes 24h, and you want to go home and bring your laptop with you at some point, you have a problem...   
