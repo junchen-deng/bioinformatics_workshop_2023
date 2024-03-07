@@ -10,8 +10,12 @@
 * Redirecting output: **>**, **>>**
 * Joining and Displaying files: **cat**, **head**, **tail**, **wc**
 * Searching text files using **grep**
+* "pipe" the output of one command as the input to another: **|**
 
 
+### Workshop 3. Advanced tools
+* Search and replace: **sed**
+* Editing tables: **cut**, **sort**, **uniq**, **diff**
 
 
 ## Let's use all the tools to solve some real-life problems!
