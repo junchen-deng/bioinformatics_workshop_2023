@@ -33,7 +33,7 @@
 We received some data from amplicon sequencing recently. The files are stored in **/mnt/qnap/users/symbio/workshops/workshop_20240308**
 * What kind of files are they?
 * Please copy all files to your home directory. It's better to have a backup instead of working on the original raw data.
-* How many files are in this folder? How many reads are in each file?
+* How many files are in this folder? How many reads are in each file? And how long is each read?
 * The file name is too messy. We only need the key information, which is the sample ID (e.g. IPA0201) and the pair ID (R1 or R2). Let's change the name for all files!
 ```
 Before: IPA0261_S445_L001_R1_001.fastq
