@@ -29,7 +29,7 @@
 * Running jobs virtually: **screen**
 * Creating an independent environment: **conda**
 
-## Let's use all the tools to solve some real-life problems!
+## Let's refresh all these tools with some real data!
 We received some data from amplicon sequencing recently. The files are stored in **/mnt/qnap/users/symbio/workshops/workshop_20240308**
 * What kind of files are they?
 * Please copy all files to your home directory. It's better to have a backup instead of working on the original raw data.
