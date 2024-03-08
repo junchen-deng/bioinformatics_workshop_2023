@@ -39,6 +39,17 @@ We received some data from amplicon sequencing recently. The files are stored in
 Before: IPA0261_S445_L001_R1_001.fastq
 After: IPA0261_R1.fastq
 ```
+* Sometimes it's good to know what samples you have. Let's output a text file with one sample ID per line.
+```
+Example:
+IPA0201
+IPA0202
+IPA0203
+IPA0204
+IPA0205
+IPA0206
+...
+```
 * Instead of fastq file, We prefer to work with fasta file. Let's convert all files into fasta format! 
 * Let's take a closer look at the sample PA0255. We would like to know what species this sample has. Let's do a BLAST run. 
 
