@@ -57,7 +57,7 @@ To assemble the reads, we will use the tool **pear**, which is located in **/mnt
 pear -f IPA0255_R1.fastq -r IPA0255_R2.fastq -o IPA0255 --min-overlap 15 -n 220 --threads 8
 ```
 
-Then, we BLAST it with the database /mnt/qnap/users/symbio/software/databases/SILVA_endo_spikeins_RDP.fasta. To do this, we need to convert the output fastq file into fasta format. Then, we run blastn, with output format '6', one hit per read, and e-value less than 1e-20. 
+Then, we BLAST it with the database **/mnt/qnap/users/symbio/software/databases/SILVA_endo_spikeins_RDP.fasta**. To do this, we need to convert the output fastq file into fasta format. Then, we run blastn, with output format '6', one hit per read, and e-value less than 1e-20. 
 
 ## Bonus questions:
 * How to convert all files into fasta format?  
