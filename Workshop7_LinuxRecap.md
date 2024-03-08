@@ -50,6 +50,11 @@ IPA0205
 IPA0206
 ...
 ```
+* Let's take a closer look at the sample IPA0255. We would like to know what species this sample has. Let's first assemble the Forward (R1) and Reverse (R2) reads and then do a BLAST run.  
+
+To assemble the reads, we will use the tool **pear**, which is located in **/mnt/qnap/users/symbio/software/miniconda3/bin/** (If you have this directory in your PATH, you should be able to use it; Otherwise, try to add it to your PATH; If you still don't manage, don't worry! I will copy the output file to the directory so you can copy too)
+```
+pear -f IPA0255_R1.fastq -r IPA0255_R2.fastq -o IPA0255 --min-overlap 15 -n 220 --threads 8
+```
 * Instead of fastq file, We prefer to work with fasta file. Let's convert all files into fasta format! 
-* Let's take a closer look at the sample PA0255. We would like to know what species this sample has. Let's do a BLAST run. 
 
