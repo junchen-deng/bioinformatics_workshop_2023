@@ -57,6 +57,7 @@ To assemble the reads, we will use the tool **pear**, which is located in **/mnt
 pear -f IPA0255_R1.fastq -r IPA0255_R2.fastq -o IPA0255 --min-overlap 15 -n 220 --threads 8
 ```
 
-Then, we BLAST it with the database
-* Instead of fastq file, We prefer to work with fasta file. Let's convert all files into fasta format! 
+Then, we BLAST it with the database. To do this, we need first to convert the output file into fasta format.
+*Bonus question 1: How to convert all files into fasta format?
+*Bonus question 2: How to assemble all samples using pear? 
 
