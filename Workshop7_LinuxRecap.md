@@ -39,5 +39,6 @@ We received some data from amplicon sequencing recently. The files are stored in
 Before: IPA0261_S445_L001_R1_001.fastq
 After: IPA0261_R1.fastq
 ```
-*Instead of fastq file, We prefer to work on fasta file. Let's convert all files into fasta format! 
+* Instead of fastq file, We prefer to work with fasta file. Let's convert all files into fasta format! 
+* Let's take a closer look at the sample PA0255. We would like to know what species this sample has. Let's do a BLAST run. 
 
