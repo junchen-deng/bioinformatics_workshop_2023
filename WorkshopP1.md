@@ -4,6 +4,8 @@
 * Programming as a way of combining simple building blocks to achieve exactly what you need!
 * Diversity of programming languages, optimized for different tasks
 * Compiled vs interpreted programming languages
+  * Compiled languages (e.g. C, C++, RUST) are converted directly into machine code that the processor can execute --> faster and more efficient, but platform-dependent
+  * interpreted languages (e.g. Python) require an interpreter to 'translate' the language for the machine --> slower, but more flexible
 * Python is a popular, powerful programming language with straightforward syntax that we will use :)
 * Key challenge in programming is developing a way of thinking about the task, rather than about syntax!  
 &nbsp;  
