@@ -43,16 +43,16 @@ Second variable attiribute - **the type**:
 ```
 &nbsp;   
   
-Third variable attiribute - "the value".  
+Third variable attiribute - **the value**.  
 &nbsp;   
     
 In some programming languages, you need to define the type when setting the variable. But Python 3 recognizes data type automatically, based on the value.
-``
+```
 Var1 = 0
 Var2 = 1.234
 Var3 = "ABC"
 Var4 = True
-``
+```
 &nbsp;  
   
 You can check the variable type using the *type()* function:
