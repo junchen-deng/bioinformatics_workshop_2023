@@ -99,7 +99,7 @@ NuclList = ['C', 'G', 'T', 'A']         # a list of nucleotides
 NuclList                                # displays the list
 
 type(List1) 
-dir(List1)       # dir() function returns all properties and methods of the specified object
+dir(List1)       # dir() function returns all attributes and methods of the specified object
 ```
 
 Objects in a list are numbered - each has an index position, **starting from 0**!
