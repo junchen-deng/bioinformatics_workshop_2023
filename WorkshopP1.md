@@ -55,7 +55,7 @@ Var4 = True
 ```
 &nbsp;  
   
-You can check the variable type using the *type()* function:
+You can check the variable type using the **type()** function:
 ```
 type(Var1)
 <class 'int'>
