@@ -102,7 +102,7 @@ type(List1)
 dir(List1)       # dir() function returns all properties and methods of the specified object
 ```
 
-Objects in a list are numbered - each has an index position
+Objects in a list are numbered - each has an index position, **starting from 0**!
 
 ```
 NuclList[0]  # returns object with index no. 0 as a variable... remember they are indexed 0, 1, 2 ...
