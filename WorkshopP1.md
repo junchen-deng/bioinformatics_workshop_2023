@@ -30,11 +30,11 @@
   
 ### P1.3. Variables
 
-Each variable has several attributes.  
+Each variable has several attributes:  
 First attribute - **the name**, usually a plain word that gives some indication of the variable content. This needs to be informative!
 &nbsp;  
   
-Second variable attiribute - "the type":  
+Second variable attiribute - **the type**:  
 ```
 **Integer**                        0, 1, 2, 123456, -4321  
 **Floating point (Float)**         0.12, 1.000, -123.56  
