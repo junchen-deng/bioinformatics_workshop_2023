@@ -79,10 +79,10 @@ Variables, or directly input objects can be used for various types of operations
 ### P1.4. Arrays
   
 ***Two primary types:***  
-1. **List** ---- of variables, or arrays!
+1. **List** [1, 2, 3, 4]---- of variables, or arrays!  
     List of Lists!
   
-2. **Dictionary**  {Key: Value}   for example, {'Seq1': 'ACGT', 'Seq2': "ACCATG'}
+2. **Dictionary**  {Key: Value}   for example, {'Seq1': 'ACGT', 'Seq2': "ACCATG'}  
     Dictionary of lists!
 &nbsp;  
   
