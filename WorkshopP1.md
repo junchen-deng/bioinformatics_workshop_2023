@@ -158,7 +158,6 @@ for no in range(0,10):
     Sum += no
     print(no, Sum)
 ```  
-&nbsp;  
   
 The *while* loop keeps iterating as long as the pre-defined condition is fulfilled:  
 ```
