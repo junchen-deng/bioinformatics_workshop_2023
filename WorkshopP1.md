@@ -4,11 +4,11 @@
 * Programming as a way of combining simple building blocks to achieve exactly what you need!
 * Diversity of programming languages, optimized for different tasks
 * Compiled vs interpreted programming languages
-* Python as a popular, powerful programming language with straightforward syntax and that we will use :)
-* Key challenge in programming is developing the way of thinking about the task, rather than about syntax!  
+* Python is a popular, powerful programming language with straightforward syntax that we will use :)
+* Key challenge in programming is developing a way of thinking about the task, rather than about syntax!  
 &nbsp;  
-* I am not a formally trained bioinformatician. I do not know many sophisticated tools.
-* I learnt how to combine very simple tools into larger workflows effectively - and that has changed my research!  
+* We are not formally trained bioinformaticians. We don't know many sophisticated tools.
+* We learned how to combine very simple tools into larger workflows effectively - and that has changed our research!  
 &nbsp;  
   
 ### P1.2. Vocabulary (largely following Chapter 7!)
