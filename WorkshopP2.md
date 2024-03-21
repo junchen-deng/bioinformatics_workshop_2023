@@ -10,7 +10,7 @@ Last week, we have learnt the key building blocks of a Python script:
 * **Arrays:**  
   * List: [1,0.1,'a']
   * Dictionary: {'header': 'rpoB', 'seq': 'atcgagag'}
-* **Flow control tools:**
+* **Flow control tools:** (Indentation matters!!!!)
   * *for* loop  
   * *while* loop  
   * *if* statement  
