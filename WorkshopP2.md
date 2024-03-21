@@ -3,13 +3,13 @@
 ### P2.1. Recap of the key concepts
 Last week, we have learnt the key building blocks of a Python script:  
 * **Variables:**  
-  * Integer  
-  * Float  
-  * String   
-  * Boolean  
+  * Integer: 1
+  * Float: 0.1
+  * String: '1', 'atcg'
+  * Boolean: True, False
 * **Arrays:**  
-  * List  
-  * Dictionary  
+  * List: [1,0.1,'a']
+  * Dictionary: {'header': 'rpoB', 'seq': 'atcgagag'}
 * **Flow control tools:**
   * *for* loop  
   * *while* loop  
