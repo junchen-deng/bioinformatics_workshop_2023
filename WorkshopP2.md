@@ -30,7 +30,7 @@ Let's see how that works!
 &nbsp;  
   
 **2) A way of accepting input:**  
-  * Asking the user for input data, for example: `name = input("Enter your name: ")`.  
+  * Asking the user for input data, for example: `name = input("Enter your name: ")`. **input() returns a string**.  
   * Opening files indicated within the script, or provided as arguments at the time the script is run.
 &nbsp;  
   
