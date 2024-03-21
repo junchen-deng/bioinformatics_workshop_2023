@@ -69,7 +69,7 @@ Considerations?  What are the necessary steps - how to break up the job into man
 >  
 > 3. While reading the input sequence backwards, compute the complement, and save it! There are many ways of doing this. Let's take small steps. First, reverse the sequence:
 > ```
-> Reversed_seq = Input_seq[::-1]
+> Reversed_seq = Input_seq[::-1]    # In [::-1], the third number indicates 'steps'. Here, it means printing out the character in the string in a reverse manner (-) with a step of 1.  
 > ```  
 > ... then create an empty Reverse_complement string:
 > ```
