@@ -84,7 +84,7 @@ Variables, or directly input objects can be used for various types of operations
 ```
 [['a', 1], ['b', 2], ['c', 3]]
 ```  
-3. **Dictionary**  {Key: Value}   for example, {'Seq1': 'ACGT', 'Seq2': "ACCATG'}  
+2. **Dictionary**  {Key: Value}   for example, {'Seq1': 'ACGT', 'Seq2': "ACCATG'}  
     Dictionary of lists!
 ```
 {'genes': ['rpoB','rpoC','16S'], 'length': [1540,1200,2433]}
