@@ -24,7 +24,7 @@ Let's see how that works!
 **A Python script typically has these four essential elements:**  
 &nbsp;  
 **1) A way of informing the operating system that the Python3 should be used to interpret the script**  
-  * We can run the script by specifying `python set_of_instructions.txt` ...   
+  * We can run the script by specifying `python3 set_of_instructions.txt` ...   
   * But probably a more universal way is making sure that the script starts with a line informing the operating system that the remainder of the file contents should be directed to and interpreted by Python:  
   `#! /usr/bin/env python3`, and making the script executable: `chmod u+x script.py`.  
 &nbsp;  
