@@ -157,8 +157,25 @@ Sum = 0
 for no in range(0,10):
     Sum += no
     print(no, Sum)
-```  
-  
+```
+By combining **if** statement and **for** loop,you can stop the loop or skip some steps within it using **break** or**continue**
+```
+for num in range(6):
+    print(num)    # it prints out numbers 0,1,2,3,4,5 line by line
+
+for num in range(6):
+    if num == 3:
+        break
+    print(num)    # We ask the loop to stop when the number is 3. It returns only 0,1,2
+                  # If you put the print() before the if statement, the number 3 will still be printed
+
+for num in range(6):
+    if num == 3:
+        continue
+    print(num)    # We ask the loop to skip when the number is 3. It returns 0,1,2,4,5 
+
+```
+
 The *while* loop keeps iterating as long as the pre-defined condition is fulfilled:  
 ```
 Sum = 0
