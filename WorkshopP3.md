@@ -36,8 +36,7 @@ for base in InputSeq:
         print('illegal characters exist in the input sequence! Please check!')
         break
 ```
-
-** **Bonus**: An advanced way to raise the custom error messages with **try - except - else**
+**Bonus**: An advanced way to raise the custom error messages with **try - except - else**
 ```
 try:    # literally means try this block of scripts
     if [checkpoint for potential errors]:
