@@ -14,7 +14,7 @@ print("C count is ", count_C)   #using the variable in some context
 GC% = (count_C + count_G) / ... #using the same variable in another context
 ```  
 &nbsp;   
- * If you are using the result of a certain computation just once, perhaps using the output immediately, without saving it as a variable, is a good idea?
+* If you are using the result of a certain computation just once, perhaps using the output immediately, without saving it as a variable, is a good idea?
 ```
 print(InputSeq.count("C"))   # immediately printing the result of counting Cs in a sequence
 ```
@@ -27,7 +27,7 @@ for base in InputSeq:
         Seq_dict[base] += 1
 ```
 &nbsp;  
-* Consider safeguarding against user error. User might provide the sequence using lowercase characters - converting it to upper case might help in such cases! Or if the provided string contains illegal characters such as "qwerty123" you may not want to refuse the computation!
+* Consider safeguarding against user error. User might provide the sequence using lowercase characters - converting it to uppercase might help! Or if the provided string contains illegal characters such as "qwerty123" you may want to refuse the computation!
 ```
 InputSeq = input("Input sequence here: ").upper()
 
@@ -36,7 +36,33 @@ for base in InputSeq:
         print('illegal characters exist in the input sequence! Please check!')
         break
 ```
-  
+
+* Bonus: An advanced way to raise the custom error messages with **try - except - else**
+```
+try:    # literally means try this block of scripts
+    if [checkpoint for potential errors]:
+        raise Exception
+except Exception:    # if errors are raised, then...
+    [error message]
+else:    # if no errors are raised, then...
+    [the rest of the scripts]
+```
+Example from the homework:
+```
+try:
+    InputSeq = input("Input sequence here: ").upper()
+    for base in InputSeq:
+        if base not in 'ACGTN':
+            raise Exception
+except Exception: 
+    print('[Error] Illegal characters detected in the input sequence')   
+else: 
+    print('Length: ', len(InputSeq))
+    print('Count of Ns: ', InputSeq.count('N'))
+    print('GC%: ', (InputSeq.count('C') + InputSeq.count('G'))/len(InputSeq))
+```
+
+
 &nbsp;  
 &nbsp;  
 ### P3.2. Built-in functions and methods on objects
