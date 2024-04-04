@@ -100,7 +100,7 @@ To open a file that contains input data, we want to run the `open()` function wi
 InputFile = open("InputFile.txt", "r")
 ```  
 
-Now, we can loop through lines. Basically, you can loop only once - so make sure to capture the desired information!  
+Now, we can loop through lines. You can loop only once - so make sure to capture the desired information!  
 Method `.readline()` captures a single line. Or you can loop through lines using the `for` loop.
 ```
 for line in InputFile:
@@ -112,7 +112,6 @@ Once you are done with the file, before you move on, make sure to close it:
 ```
 InputFile.close()
 ``` 
-  
 &nbsp;  
 How to write to files? First, you want to open them in the writeable mode. Then, specify the output of the `print()` function as the file. Do not forget to close the file once you are done!
 ```
@@ -121,7 +120,10 @@ for Object in ListOfObjects:
     print(Object, file = OutputFile)  
 OutputFile.close()  
 ```  
-   
+
+Don't close your file properly can cause trouble. However, it's easy to forget to close the files, and an extra line at the end looks ugly.  
+Luckily, there is a better way to read a file using **with** -- a context manager helps to automatically close the file!
+
 &nbsp;   
 #### P3.3.1. Practical examples:
 Now, how to open a fasta file where each sequence is in a single line, such as this:
