@@ -103,9 +103,10 @@ InputFile = open("InputFile.txt", "r")
 Now, we can loop through lines. You can loop only once - so make sure to capture the desired information!  
 Method `.readline()` captures a single line. Or you can loop through lines using the `for` loop.
 ```
+LIST = []
 for line in InputFile:
     LINE = line.strip().split()
-    TABLE.append(LINE)
+    LIST.append(LINE)
 ```  
   
 Once you are done with the file, before you move on, make sure to close it:
@@ -123,6 +124,11 @@ OutputFile.close()
 
 Don't close your file properly can cause trouble. However, it's easy to forget to close the files, and an extra line at the end looks ugly.  
 Luckily, there is a better way to read a file using **with** -- a context manager helps to automatically close the file!
+```
+with open("InputFile.txt", "r") as InputFile:
+    
+```
+
 
 &nbsp;   
 #### P3.3.1. Practical examples:
