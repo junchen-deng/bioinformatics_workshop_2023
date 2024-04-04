@@ -159,14 +159,11 @@ for line in InputFasta:
 &nbsp;     
 How to type the contents of the above SeqDict to a file in the custom `SeqHeading: NuclSequence` format?
 ```
-OutputFile = open("OutputFile.txt", "w")
-
-for SeqName in SeqDict:
-    print(SeqName, ": ", SeqDict[SeqName], sep = "", end = "\n", file = OutputFile)
+with open("OutputFile.txt", "w") as OutputFile: 
+    for SeqName in SeqDict:
+        print(SeqName, ": ", SeqDict[SeqName], sep = "", end = "\n", file = OutputFile)
     ### Note that above, I requested that elements printed are separated by nothing: `sep = ""` (default: space),
     ### ... and that each line ends with END-OF-LINE: `end = "\n"` --- which is the default anyway.
-
-OutputFile.close()   # Don't forget about this!
 ```  
   
 &nbsp;  
