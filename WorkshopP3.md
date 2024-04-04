@@ -33,7 +33,7 @@ InputSeq = input("Input sequence here: ").upper()
 
 for base in InputSeq:
     if not base in 'ACGTN':
-        error = 1
+        print('illegal characters exist in the input sequence! Please check!')
         break
 ```
   
