@@ -1,4 +1,4 @@
-# Workshop P2 (20th May 2021). The first Python scripts.
+# Workshop P2 (22th March 2024). The first Python scripts.
   
 ### P2.1. Recap of the key concepts
 Last week, we have learnt the key building blocks of a Python script:  
