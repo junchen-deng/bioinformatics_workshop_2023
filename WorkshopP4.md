@@ -105,6 +105,8 @@ def ImportFasta(fasta_file):    # a function imports and saves a fasta file as a
 
         Seq_list.append([Seq_heading, Seq]) # save the last sequence
     return(Seq_list)
+
+Sequence_list = ImportFasta(input_file)
 ```
 
 ### P4.4. Formatting output
