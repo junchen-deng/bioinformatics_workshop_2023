@@ -89,7 +89,7 @@ How to make your text pretty --- or just organized in the way it needs to be? Le
 >>> print("Your name is", FIRST_NAME, ", you are", AGE, "years old.")
 Your name is John , you are 25 years old.
 >>>
->>> print("Your name is ", FIRST_NAME, ", you are ", AGE, " years old.", sep = "", end = "\n") # changing the separator from default
+>>> print("Your name is ", FIRST_NAME, ", you are ", AGE, " years old.", sep = "", end = "\n") # changing the separator from the default
 Your name is John, you are 25 years old.
 >>>
 >>> print("Your name is %s, you are %s years old" % (FIRST_NAME, AGE))
@@ -98,7 +98,7 @@ Your name is John, you are 25 years old
 >>> print("Your name is {}, you are {} years old".format(FIRST_NAME, AGE))
 Your name is John, you are 25 years old
 >>>
->>> print(f"Your name is {FIRST_NAME}, you are {AGE} years old.")
+>>> print(f"Your name is {FIRST_NAME}, you are {AGE} years old.")    #only available for Python v3.6 or more
 Your name is John, you are 25 years old.
 ```
 You can find more info about these methods online, for example at [https://realpython.com/python-string-formatting/#4-template-strings-standard-library](https://realpython.com/python-string-formatting/#4-template-strings-standard-library).  
