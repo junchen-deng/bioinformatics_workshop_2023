@@ -23,7 +23,7 @@ Now, how would you approach the problem of **translating** a nucleotide sequence
 
 
 ## Functions!
-
+```
 def RevCompl(seq):
    RC_dict = {'A':'T', 'T':'A', 'G':'C', 'C': 'G'}
    RCseq = ""
@@ -48,7 +48,7 @@ def ImportFasta(input_file):
     SeqDict[heading] = sequence
     input.close()
     return(SeqDict)
-
+```
 
 #### Homeworks/scripts recently.....
 1) write a script that exports selected regions of a selected sequence from a multifasta file
