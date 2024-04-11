@@ -88,7 +88,7 @@ def mystats(seq):
 
 mystats('AGTGCGGGTATATCGTTGGGCTATCGATCAGTCAGTACGT')
 ```
-
+You can also return the value by using the **return()** statement: 
 ```
 def ImportFasta(fasta_file):    # a function imports and saves a fasta file as a list of list 
     with open(fasta_file, 'r') as FASTA:
@@ -108,7 +108,7 @@ def ImportFasta(fasta_file):    # a function imports and saves a fasta file as a
 
 Sequence_list = ImportFasta(input_file)
 ```
-
+&nbsp; 
 ### P4.4. Formatting output
 
 How to make your text pretty --- or just organized in the way it needs to be? Let's look at alternative ways:)
