@@ -74,7 +74,7 @@ total 144
 drwxr-xr-x 2 piotr.lukasik users  4096 Jun 10 05:57 test_dir
 drwxr-xr-x 2 piotr.lukasik users  4096 Jun 10 05:53 test_dir2
 ```
-A more powerful improved module that replaces **os** is **subprocess**
+A more powerful improved module that replaces **os** is [**subprocess**](https://docs.python.org/3/library/subprocess.html#module-subprocess), which can manage the output from the shell script within python. If you have needs, take a look at it! Sometimes, excuting shell scripts in python is faster and easier to achieve your goal!  
 
 &nbsp;  
 &nbsp;  
