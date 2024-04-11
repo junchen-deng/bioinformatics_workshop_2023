@@ -88,6 +88,7 @@ def mystats(seq):
 
 mystats('AGTGCGGGTATATCGTTGGGCTATCGATCAGTCAGTACGT')
 ```
+&nbsp; 
 You can also return the value by using the **return()** statement: 
 ```
 def ImportFasta(fasta_file):    # a function imports and saves a fasta file as a list of list 
