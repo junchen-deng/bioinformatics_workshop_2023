@@ -114,17 +114,4 @@ Some methods also allow you to format values, which can be a handy way of making
     0.12
 ```
 
-Text formatting can be very helpful when managing file/sample names for many different purposes. For example, when using the `os.system()` function to feed information directly to shell!
-  
-&nbsp;  
-&nbsp;  
-### P4.4. Scripts to write!
-
-##### Option 1: Writing a script that only outputs selected bases from a sequence in a fasta file.  
-  
-##### Option 2: Writing a script that works on tables - computes and check totals
-  
-##### Option 3: Your idea?  
-  
-
-
+Text formatting can be very helpful when managing file/sample names for many different purposes. For example, when using the `os.system()` function to feed information directly to the shell!
