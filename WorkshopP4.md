@@ -48,21 +48,7 @@ OUTPUT = open(path_to_output_file, "w")
   
 ```  
 &nbsp;  
-
-
-
-
-
-##### Example: sys - stopping the script when encountering unexpected characters
-```
-for base in nucleotide_sequence:
-    if base not in 'ACGTN':
-        sys.exit('\nError! Encountered an incorrect character %s in sequence %s. Exiting...' % (base, nucleotide_sequence))
-```    
-  
-##### Let's now edit our Homework scripts following the examples above so that they work with input files provided by the user!  
-  
-&nbsp;  
+Let's now edit our Homework scripts following the examples above so that they work with input files provided by the user!    
 &nbsp;  
 ##### Example: os - working with folders and files
 ```
