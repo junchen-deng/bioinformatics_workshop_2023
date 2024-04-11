@@ -76,8 +76,28 @@ drwxr-xr-x 2 piotr.lukasik users  4096 Jun 10 05:53 test_dir2
 ```
 A more powerful improved module that replaces **os** is [**subprocess**](https://docs.python.org/3/library/subprocess.html#module-subprocess), which can **manage the output** from the shell script within Python. If you have needs, take a look at it! Sometimes, executing shell scripts in Python makes it faster and easier to achieve your goal!  
 
-&nbsp;  
-### P4.3. Formatting output
+&nbsp; 
+### P4.3 Functions
+
+```
+def ImportFasta(fasta_file):    # a function imports and saves a fasta file as a list of list 
+    with open(fasta_file, 'r') as FASTA:
+        Seq_list = []
+        Seq = ''
+        for line in FASTA: 
+            if line.startswith('>'): 
+                if Seq != '':    # save the existing header and sequence to a list before overwriting
+                    Seq_list.append([Seq_heading, Seq])
+                    Seq = ''
+                Seq_heading = line.strip('\n')
+            else:
+                Seq += line.strip('\n').upper()  
+
+        Seq_list.append([Seq_heading, Seq]) # save the last sequence
+    return(Seq_list)
+```
+
+### P4.4. Formatting output
 
 How to make your text pretty --- or just organized in the way it needs to be? Let's look at alternative ways:)
 
