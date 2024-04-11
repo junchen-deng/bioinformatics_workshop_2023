@@ -50,7 +50,7 @@ OUTPUT = open(path_to_output_file, "w")
 &nbsp;  
 Let's now edit our Homework scripts following the examples above so that they work with input files provided by the user!    
 &nbsp;  
-##### Example: os - working with folders and files
+##### Example: os - working with folders and files, like what you do in the shell
 ```
 >>> import os
 >>> os.system("ls -l")
@@ -74,6 +74,8 @@ total 144
 drwxr-xr-x 2 piotr.lukasik users  4096 Jun 10 05:57 test_dir
 drwxr-xr-x 2 piotr.lukasik users  4096 Jun 10 05:53 test_dir2
 ```
+A more powerful improved module that replaces **os** is **subprocess**
+
 &nbsp;  
 &nbsp;  
 ### P4.3. Formatting output
