@@ -102,10 +102,7 @@ Your name is John, you are 25 years old
 Your name is John, you are 25 years old.
 ```
 You can find more info about these methods online, for example at [https://realpython.com/python-string-formatting/#4-template-strings-standard-library](https://realpython.com/python-string-formatting/#4-template-strings-standard-library).  
-Personally, I tend to use the "legacy" method #2, using "%" characters. The most straightforward method #4 is only available from Python 3.6 onwards, which may or may not be a problem for you!
- 
-These methods do allow you to format values, which can be a handy way of making your output more pretty :)  
-  
+Some methods also allow you to format values, which can be a handy way of making your output more pretty :)  
 ```
 >>> My_value = 0.12345
 >>> 
