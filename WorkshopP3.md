@@ -1,4 +1,4 @@
-# Workshop P3 (27th May 2021). Working with files!
+# Workshop P3 (5th April 2024). Working with files!
   
 ### P3.1. Homework --- how did you do?
 "write a script that would compute basic statistics for a user-provided sequence: length, count of Ns, and GC%."
