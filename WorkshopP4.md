@@ -78,6 +78,16 @@ A more powerful improved module that replaces **os** is [**subprocess**](https:/
 
 &nbsp; 
 ### P4.3 Functions
+A function is a block of code which only runs when it is called. Functions help to streamline your code when you need to repeatedly execute the same block of code.  
+In Python, a function is defined using the **def** keyword:
+```
+def mystats(seq):
+    print('Length: ', len(seq))
+    print('Count of Ns: ', seq.count('N'))
+    print('GC%: ', (seq.count('C') + seq.count('G'))/len(seq))
+
+mystats('AGTGCGGGTATATCGTTGGGCTATCGATCAGTCAGTACGT')
+```
 
 ```
 def ImportFasta(fasta_file):    # a function imports and saves a fasta file as a list of list 
