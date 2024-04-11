@@ -1,4 +1,4 @@
-# Workshop P1 (13th May 2021). Intro to programming and Python. 
+# Workshop P1 (15th March 2024). Intro to programming and Python. 
   
 ### P1.1. Programming - basic concepts
 * Programming as a way of combining simple building blocks to achieve exactly what you need!
