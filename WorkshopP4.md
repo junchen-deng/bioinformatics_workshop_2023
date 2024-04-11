@@ -29,8 +29,7 @@ Some of them are provided essentially by default with python3. Three such module
 * [**re** - Regular expression operations](https://docs.python.org/3/library/re.html)  
 
 &nbsp; 
-Others need to be installed, which can be a bit of a pain as they may require permissions, various dependencies, etc.  
-Examples that I have used: `biopython`, `pysam`.   
+Others need to be installed. Some of them can be easily installed with the command **pip install [package name]**, while others can be tricky as they may require additional permissions, dependencies, etc.   
 
 &nbsp; 
 ##### Example: sys - working with file names provided as arguments 
